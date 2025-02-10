@@ -1,0 +1,23 @@
+@use '@styles/functions.scss' as functions;
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 100vw;
+    // height: 100vh;
+    
+    .background {
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+}
+
+// .background {  
+//     position: absolute;
+//     background-repeat: no-repeat;
+//     background-position: center center;
+//     background-size: cover;
+// }

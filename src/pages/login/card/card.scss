@@ -1,0 +1,49 @@
+@use '@styles/functions.scss' as functions;
+
+.card-login {
+    width: 412px;
+    padding: functions.px-to-rem(20px);
+    height: 554px;
+    margin: 0 auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+form {
+    width: 100%;
+}
+.card-login_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: functions.px-to-rem(20px);
+}
+
+.card-login__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.button__primary {
+    width: 100%;
+    height: functions.px-to-rem(40px);
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: functions.px-to-rem(5px);
+    cursor: pointer;
+    font-size: functions.px-to-rem(16px);
+    font-weight: bold;
+}
+
+.card-login__form__buttons{
+    width: 100%;
+}
