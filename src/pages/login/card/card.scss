@@ -29,9 +29,15 @@ form {
     justify-content: center;
     align-items: center;
     width: 100%;
+    
+    &__inputs {
+        font-size: functions.px-to-rem(12px);
+        font-weight: light;
+    }
 
     &__input {
         margin: 4px 0;
+        height: functions.px-to-rem(40px);
     }
 }
 

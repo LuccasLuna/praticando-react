@@ -18,10 +18,12 @@ export default function Card() {
                 </div>
                 <form action="">
                     <div className="card-login__form">
-
-                        <Input placeholder='Digite seu login de rede' className='card-login__form__input'></Input>
-
-                        <Input type="password" placeholder='Digite seu login de rede' className='card-login__form__input'></Input>
+                        <div className='card-login__form__inputs'>
+                            <label htmlFor="">Usuário</label>
+                            <Input placeholder='Digite seu login de rede' className='card-login__form__input'></Input>
+                            <label htmlFor="">Senha</label>
+                            <Input type="password" placeholder='Digite seu login de rede' className='card-login__form__input'></Input>
+                        </div>
 
                         <div className="card-login__form__buttons">  
                             <Button className="button__primary">
