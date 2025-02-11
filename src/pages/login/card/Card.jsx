@@ -8,10 +8,10 @@ export default function Card() {
     return (
         <>
             <section className="card-login">
-                <img src={logo} alt="Logo ITESP" />
+                <img className='card-login__logo__itesp' src={logo} alt="Logo ITESP" />
 
                 <div className="card-login__text">
-                    <h1>Bem vindo (a)!</h1>
+                    <h1 className='card-login__text__title'>Bem vindo (a)!</h1>
                     <p>
                         Para se manter conectado no sistema, entre com seu e-mail e senha
                     </p>
@@ -19,23 +19,19 @@ export default function Card() {
                 <form action="">
                     <div className="card-login__form">
 
-                        <div label="Usuário">
-                            <Input placeholder='Usuário'></Input>
-                        </div>
+                        <Input placeholder='Digite seu login de rede' className='card-login__form__input'></Input>
 
-                        <div label="Senha">
-                            <Input type="password" placeholder='Senha'></Input>
-                        </div>
+                        <Input type="password" placeholder='Digite seu login de rede' className='card-login__form__input'></Input>
 
                         <div className="card-login__form__buttons">  
                             <Button className="button__primary">
-                                Entrar
+                                Login
                             </Button>
                             <Button className="button__secondary">
-                                Entrar com o gov.br
+                                Entrar com gov.br
                             </Button>
                             <Button className="button__secondary">
-                                Entrar de outra forma....
+                                Login com UGE
                             </Button>
                         </div>
                     </div>

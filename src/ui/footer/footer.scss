@@ -1,0 +1,14 @@
+@use '@styles/functions.scss' as functions;
+
+.ui-footer {
+    width: 100%;
+    height: functions.px-to-rem(48px);
+    background-color: #222326;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #6c757d;
+    z-index: 900;
+}

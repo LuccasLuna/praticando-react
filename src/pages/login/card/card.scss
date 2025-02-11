@@ -3,26 +3,69 @@
 .card-login {
     width: 412px;
     padding: functions.px-to-rem(20px);
-    height: 554px;
+    height: 90%;
     margin: 0 auto;
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     z-index: 1;
+    border-radius: functions.px-to-rem(8px);
 }
+
+.card-login__logo__itesp {
+    width: 50%;
+}
+
 form {
     width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-.card-login_form {
+.card-login__form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: functions.px-to-rem(20px);
+
+    &__input {
+        margin: 4px 0;
+    }
 }
+
+.card-login__form__buttons{
+    width: 100%;
+
+    .button__primary {
+        width: 100%;
+        height: functions.px-to-rem(40px);
+        background-color: #FB6514;
+        color: white;
+        border: none;
+        border-radius: functions.px-to-rem(5px);
+        cursor: pointer;
+        font-size: functions.px-to-rem(16px);
+        font-weight: bold;
+        margin: 4px 0;
+    }
+    
+    .button__secondary {
+        width: 100%;
+        height: functions.px-to-rem(40px);
+        background-color: #FFEAD5;
+        color: #FB6514;
+        border: 1px solid #FB6514;
+        border-radius: functions.px-to-rem(5px);
+        cursor: pointer;
+        font-size: functions.px-to-rem(16px);
+        font-weight: bold;
+        margin: 4px 0;
+    }
+}
+
+
 
 .card-login__text {
     display: flex;
@@ -30,20 +73,13 @@ form {
     justify-content: center;
     align-items: center;
     text-align: center;
+    color: #5E2F2B;
+
+    &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+    }
 }
 
-.button__primary {
-    width: 100%;
-    height: functions.px-to-rem(40px);
-    background-color: #0077ff;
-    color: white;
-    border: none;
-    border-radius: functions.px-to-rem(5px);
-    cursor: pointer;
-    font-size: functions.px-to-rem(16px);
-    font-weight: bold;
-}
 
-.card-login__form__buttons{
-    width: 100%;
-}
+
