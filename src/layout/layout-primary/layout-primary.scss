@@ -1,0 +1,48 @@
+@use "@styles/functions.scss" as functions;
+
+.layout-primary {
+  display: flex;
+  gap: functions.px-to-rem(24px);
+
+  height: 100vh;
+
+  background-color: var(--color-neutral-100);
+
+  &__background {
+    position: absolute;
+    z-index: 1;
+
+    width: 100%;
+    height: functions.px-to-rem(320px);
+
+    object-fit: cover;
+  }
+
+  &__container {
+    padding-top: functions.px-to-rem(24px);
+    padding-right: functions.px-to-rem(16px);
+
+    position: relative;
+    z-index: 2;
+
+    width: 100%;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &__content {
+      margin-top: functions.px-to-rem(18px);
+
+      position: relative;
+      overflow: hidden;
+
+      background-color: var(--color-neutral-white);
+
+      // min-height: calc(100vh - 20rem);
+      padding: functions.px-to-rem(16px);
+      border-radius: 8px;
+
+      padding-bottom: px-to-rem(18px);
+    }
+  }
+}

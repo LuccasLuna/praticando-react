@@ -1,0 +1,66 @@
+@use '@styles/functions.scss' as functions;
+
+.sidebar {
+  position: relative;
+  z-index: 2;
+
+  user-select: none;
+
+  height: 100%;
+
+  padding-top: functions.px-to-rem(24px);
+
+  width: 7.5rem;
+
+  &--open {
+    @extend .sidebar;
+
+    width: functions.px-to-rem(240px);
+  }
+
+  > * {
+    width: 100%;
+  }
+
+  &__header {
+    display: flex;
+    padding-left: functions.px-to-rem(32px);
+
+    gap: functions.px-to-rem(16px);
+    
+    .logo {
+      width: functions.px-to-rem(140px);
+      height: 40px;
+
+      &--closed{
+        opacity: 0;
+      }
+    }
+  }
+
+  &__options {
+    width: 100%;
+    height: 91%;
+
+    gap: functions.px-to-rem(8px);
+
+    margin-top: functions.px-to-rem(32px);
+    padding: functions.px-to-rem(16px);
+    padding-left: functions.px-to-rem(32px);
+    border-radius: 0px 8px 0px 0px;
+
+    background-color: var(--color-neutral-white);
+
+    &--open {
+      @extend .sidebar__options;
+    }
+  }
+
+  &__footer {
+    gap: functions.px-to-rem(8px);
+
+    margin: auto {
+      bottom: 0;
+    };
+  }
+}

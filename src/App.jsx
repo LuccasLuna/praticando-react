@@ -1,13 +1,15 @@
+import Layout from "antd/es/layout/layout";
 import { Outlet } from "react-router";
-import { SessionProvider } from "./context/loginSession";
-
+import { LayoutPrimary } from "./layout/layout-primary/layout-primary";
 
 function App() {
 
   return (
     <main>
-        app
+      <LayoutPrimary>
+        {/* app */}
         <Outlet />
+      </LayoutPrimary>
       
     </main>
   )
