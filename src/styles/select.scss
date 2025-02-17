@@ -1,0 +1,20 @@
+@use "@styles/functions" as functions;
+
+.select {
+  &__primary {
+    height: functions.px-to-rem(40px);
+  }
+
+  &__secondary {
+    height: functions.px-to-rem(40px);
+
+    .ant-select-selector {
+      background-color: var(--color-neutral-050);
+      border-radius: 50px;
+  
+      & span {
+        color: var(--color-neutral-300);
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+@use "functions.scss" as functions;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: functions.px-to-rem(3.5px);
+
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+
+  height: functions.px-to-rem(40px);
+
+  cursor: pointer;
+
+  font-size: functions.px-to-rem(14px);
+  font-weight: 400;
+
+  &__primary {
+    @extend .button;
+
+    background-color: var(--color-primary);
+    color: var(--color-neutral-white);
+    border: 1px solid var(--color-primary);
+
+    transition: all 250ms;
+
+    &:not(:disabled):hover  {
+      background-color: var(--color-primary-400);
+    }
+
+    &:disabled {
+      background-color: var(--color-primary-200);
+      cursor: inherit;
+    }
+  }
+
+  &__secondary {
+    @extend .button;
+
+    background-color: var(--color-primary-100);
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+
+    transition: all 250ms;
+
+    &:not(:disabled):hover  {
+      background-color: var(--color-primary-300);
+    }
+
+    &:disabled {
+      border: 1px solid var(--color-primary-300);
+      color: var(--color-primary-300);
+
+      cursor: inherit;
+    }
+
+    &--small {
+      @extend .button__secondary;
+
+      padding: 0.5rem;
+    }
+  }
+
+  &__tertiary {
+    @extend .button;
+
+    background-color: var(--color-primary-50);
+    border: 1px solid var(--color-primary-100);
+    color: var(--color-neutral-900);
+
+    padding: 0.5rem;
+
+    transition: all 250ms;
+
+    &:not(:disabled):hover  {
+      background-color: var(--color-primary-300);
+    }
+
+    &:disabled {
+      border: 1px solid var(--color-primary-300);
+      color: var(--color-primary-300);
+
+      cursor: inherit;
+    }
+  }
+
+  &__cancel {
+    @extend .button;
+
+    background-color: var(--color-neutral-050);
+    border: 1px solid var(--color-neutral-300);
+
+    color: var(--color-neutral-700);
+
+    transition: all 250ms;
+
+    &:not(:disabled):hover  {
+      background-color: var(--color-neutral-100);
+    }
+
+    &:disabled {
+      color: var(--color-neutral-300);
+      cursor: inherit;
+    }
+  }
+}

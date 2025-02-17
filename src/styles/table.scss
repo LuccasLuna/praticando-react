@@ -1,0 +1,31 @@
+.table-primary {
+
+  .ant-table {
+    max-width: calc(100vw - 12rem);
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+.table-action__view {
+  color: var(--color-neutral-black);
+  cursor: pointer;
+
+  i {
+    pointer-events: none;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-neutral-500);
+  }
+}
+
+.table-action__anchor {
+  color: var(--color-neutral-black);
+
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-neutral-500);
+  }
+}

@@ -1,0 +1,33 @@
+.search {
+  input,
+  button {
+    border-radius: 50px;
+    border-color: var(--color-neutral-300);
+
+    background-color: var(--color-neutral-050);
+  }
+
+  input:hover {
+    background-color: var(--color-neutral-050);
+    border-color: var(--color-neutral-300);
+
+    border-right: none;
+  }
+
+  button:hover {
+    background-color: var(--color-neutral-050) !important;
+    border-color: var(--color-neutral-300) !important;
+  }
+
+  input::placeholder {
+    color: var(--color-neutral-300);
+  }
+
+  button {
+    border-left: none;
+  }
+
+  &__primary {
+    @extend .search;
+  }
+}

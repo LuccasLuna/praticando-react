@@ -1,0 +1,19 @@
+@use "./functions.scss" as functions;
+
+.ant-pagination-prev a,
+.ant-pagination-next a {
+  color: var(--color-neutral-700);
+
+  border-bottom: 1px solid var(--color-neutral-700);
+}
+
+.ant-pagination .ant-pagination-item-active {
+  background-color: var(--color-neutral-100);
+  border-color: transparent;
+  
+  a {
+    font-size: functions.px-to-rem(14px);
+    font-weight: 400;
+    color: var(--color-neutral-900);
+  }
+}

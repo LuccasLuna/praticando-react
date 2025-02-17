@@ -1,0 +1,156 @@
+@use "variables";
+@use "fonts";
+@use "buttons";
+@use "modals";
+@use "table";
+@use "paginator";
+@use "functions";
+@use "select";
+@use "input";
+@use "textarea";
+@use "search";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-70 {
+  width: 70%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-1 {
+  > * {
+    flex: 1;
+  }
+}
+
+.d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.d-end {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.d-space-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.d-row-center {
+  display: flex;
+  align-items: center;
+}
+
+.gap-24 {
+  gap: px-to-rem(24px);
+}
+
+.gap-16 {
+  gap: px-to-rem(16px);
+}
+
+.gap-8 {
+  gap: px-to-rem(8px);
+}
+
+.gap-4 {
+  gap: px-to-rem(4px);
+}
+
+.align-top {
+  align-items: flex-start;
+}
+
+.align-bottom {
+  align-items: flex-end;
+}
+
+.mh-16 {
+  margin: px-to-rem(16px) 0;
+}
+
+.mt-16 {
+  margin-top: px-to-rem(16px);
+}
+
+.mb-24 {
+  margin-bottom: px-to-rem(24px);
+}
+
+.shadow {
+  box-shadow: 4px 4px 4px 0px #00000040;
+}
+
+.color-green {
+  color: vaR(--color-success-600) !important;
+}
+
+.color-yellow {
+  color: var(--color-warning-400) !important;
+}
+
+.bg-green {
+  background-color: var(--color-success-050);
+}
+
+.bg-red {
+  background-color: var(--color-error-050);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.activity-filters {
+  display: flex;
+  gap: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.events-none {
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.no-border {
+  border: none;
+}
+
+.text-900 {
+  color: var(--collor-neutral-900);
+}
